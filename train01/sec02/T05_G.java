@@ -5,30 +5,23 @@ package train01.sec02;
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class T05 {
+public class T05_G {
 	public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        // 3개의 정숫값 입력 받기
         System.out.print("정숫값 a: ");    int a = scanner.nextInt();
         System.out.print("정숫값 b: ");    int b = scanner.nextInt();
         System.out.print("정숫값 c: ");    int c = scanner.nextInt();
 
-        int med;
-        if(a>=b)				//a>=b
-        	if(b>=c)				//a>=b>=c
-        		med=b;
-        	else if(a<=c)			//c>=a>=b
-        		med=a;
-        	else					//a>c>=b
-        		med=c;
-        else if(a>c)			//b>a, a>c -> b>a>c
-        	med=a;
-        else if(b>c)			//c>a, b>c -> b>c>a
-        	med=c;
-        else					//c>b, b>a -> c>b>a
-        	med=b;
-        	System.out.println("중간값: " + med);
-        		
+        // 입력받은 값을 배열에 저장
+        int[] nums = {a, b, c};
+
+        // 배열을 정렬
+        Arrays.sort(nums);
+
+        // 중앙값 출력
+        System.out.println("중앙값은 " + nums[1] + "입니다.");
 			
 	}
 }
