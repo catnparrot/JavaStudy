@@ -30,7 +30,7 @@ public class T01_G {
             /*
              if (r == 0) {
              
-                System.out.println("종료되었습니다.");
+                System.out.println("종료 되었습니다.");
             }
 			*/
         } while (r == 1);

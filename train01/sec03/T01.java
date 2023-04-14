@@ -26,7 +26,6 @@ public class T01 {
 			System.out.println("다시 한번? 1-Yes / 0-No:");
 			r = sc.nextInt();
 		} while (r==1);
-			//
 		//디바 프루 는되복반 여하의 에문 od
 
 	}
