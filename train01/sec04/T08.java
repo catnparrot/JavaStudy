@@ -1,21 +1,22 @@
-package train01.sec03;
+package train01.sec04;
 
 import java.util.Scanner;
 
-public class T07_2 {
+public class T08 {
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("몇 개의 *를 표시할까요?: ");
 		int n = sc.nextInt();
 		if(n>0) {
-			int i = 0;
-			while(i<n) {
-				System.out.println('*');
-				i++;
+			for(int i=0;i<n;i++) {
+				System.out.print('*');
+				if(i%5==4)
+					System.out.println();
 			}
-			System.out.println();	//이건 진짜 왜 있는 걸까
+			if(n%5!=0)
+				System.out.println();
 		}
 	}
 
 }
-//??? 뭐가 다른거야?
