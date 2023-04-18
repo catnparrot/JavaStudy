@@ -11,11 +11,10 @@ public class T07_2 {
 			int i = 0;
 			while(i<n) {
 				System.out.println('*');
-				i++;
+				++i;
 			}
 			System.out.println();	//이건 진짜 왜 있는 걸까
 		}
 	}
 
 }
-//??? 뭐가 다른거야?
