@@ -1,4 +1,4 @@
-package train01.sec14.t02t03;
+package train01.sec15.t08;
 
 public class Day {
 	private int year = 1;
