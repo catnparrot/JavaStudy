@@ -18,21 +18,21 @@ public class DayTester {
 		System.out.println("[1]연월일을 변경 [2]연을 변경");
 		System.out.println("[3]월을 변경 [4]일을 변경");
 		System.out.println("[5]1일 뒤 [6]1일 앞");
-		System.out.print("[7]n일 뒤 [8]n일 앞");
+		System.out.print("[7]n일 뒤 [8]n일 앞: ");
 		
 		int change = sc.nextInt();
 		int y = 0, m=0, d=0, n=0;
 		if (change == 1 || change ==2) {
-			System.out.println("연: "); y=sc.nextInt();
+			System.out.print("연: "); y=sc.nextInt();
 		}
 		if (change == 1 || change ==3) {
-			System.out.println("월: "); m=sc.nextInt();
+			System.out.print("월: "); m=sc.nextInt();
 		}
 		if (change == 1 || change ==4) {
-			System.out.println("일: "); d=sc.nextInt();
+			System.out.print("일: "); d=sc.nextInt();
 		}
 		if (change == 7 || change ==8) {
-			System.out.println("며칠: "); n=sc.nextInt();
+			System.out.print("며칠: "); n=sc.nextInt();
 		}
 		
 		switch(change) {
