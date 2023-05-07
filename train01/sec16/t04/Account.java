@@ -22,15 +22,52 @@ class Account {
 		this.no = no;
 	}
 
-	/*
+	
 	public Account(String name, String no, long balance, Day openDay) {
-		super();
 		this.name = name;
 		this.no = no;
 		this.balance = balance;
-		this.openDay = openDay;
+		this.openDay = new Day(openDay);
 	}
-	*/
+
+	//계좌 명의 확인
+	public String getName() {
+		return name;
+	}
+
+	//계좌 번호 확인
+	public String getNo() {
+		return no;
+	}
+
+	//예금 잔고 확인
+	public long getBalance() {
+		return balance;
+	}
+
+	//식별 번호 가져오기
+	public Day getOpenDay() {
+		return openDay;
+	}
+
+	//계좌 개설일 확인
+	public int getId() {
+		return id;
+	}
+
+	//k원 입금
+	void deposit(long k) {
+		balance += k;
+	}
 	
-	
+	//k원 출금
+	void withdraw(long k) {
+		balance -= k;
+	}
+
+
+	//문자열 표현에 의한 계좌 기본 정보 반환
+	public String toString() {
+		return "{" + name + ", " + no + ", " + balance + "}";
+	}
 }
